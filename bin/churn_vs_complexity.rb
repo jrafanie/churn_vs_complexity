@@ -9,6 +9,8 @@ def ignored?(file_path)
   return true if file_path.start_with?("spec")
   return true if file_path.start_with?("test")
   return true if file_path.start_with?("db/migrate")
+  return true if file_path.end_with?("_spec.rb")
+  return true if file_path.end_with?("_test.rb")
   return true unless File.file?(file_path)
   false
 end

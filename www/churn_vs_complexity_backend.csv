@@ -31,7 +31,7 @@ app/models/ems_refresh/save_inventory_cloud.rb,3,178.8,12.8
 app/models/ext_management_system.rb,13,609.7,8.4
 app/models/generic_object.rb,3,48.2,6.0
 app/models/generic_object_definition.rb,5,47.7,6.8
-app/models/hardware.rb,5,409.3,24.1
+app/models/hardware.rb,3,409.3,24.1
 app/models/host.rb,10,2237.3,12.1
 app/models/job_proxy_dispatcher.rb,3,511.9,22.3
 app/models/live_metric.rb,3,122.1,11.1
@@ -124,7 +124,7 @@ app/models/storage_profile.rb,3,5.0,5.0
 app/models/user.rb,6,280.5,6.8
 app/models/vim_performance_analysis.rb,3,713.2,34.0
 app/models/vm/operations/lifecycle.rb,6,29.6,5.9
-app/models/vm_or_template.rb,15,2450.5,13.5
+app/models/vm_or_template.rb,14,2450.5,13.5
 app/models/vm_or_template/operations/relocation.rb,3,119.4,11.9
 app/models/zone.rb,5,276.6,6.1
 app/services/ansible_tower_job_template_dialog_service.rb,3,93.0,9.3
@@ -151,13 +151,6 @@ gems/pending/openstack/events/openstack_ceilometer_event_monitor.rb,4,80.9,5.8
 gems/pending/openstack/events/openstack_rabbit_event_monitor.rb,4,156.3,11.2
 gems/pending/openstack/openstack_handle/handle.rb,5,323.7,7.4
 gems/pending/postgres_ha_admin/failover_databases.rb,6,61.6,7.7
-gems/pending/spec/appliance_console/database_configuration_spec.rb,3,1031.5,16.9
-gems/pending/spec/disk/modules/azure_blob_disk_spec.rb,4,326.2,9.9
-gems/pending/spec/disk/modules/miq_disk_cache_spec.rb,4,232.5,7.7
-gems/pending/spec/disk/modules/miq_dummy_disk_spec.rb,3,175.9,6.5
-gems/pending/spec/miq_vm/miq_azure_vm_image_spec.rb,4,92.7,4.9
-gems/pending/spec/miq_vm/miq_azure_vm_instance_spec.rb,4,92.7,4.9
-gems/pending/spec/postgres_ha_admin/failover_databases_spec.rb,7,93.8,9.4
 gems/pending/util/vmdb-logger.rb,4,167.1,10.4
 lib/acts_as_ar_query.rb,11,172.9,6.6
 lib/api/settings.rb,3,11.3,5.6
