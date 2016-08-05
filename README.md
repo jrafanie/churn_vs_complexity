@@ -26,6 +26,8 @@ bundle exec rackup
 open http://localhost:9292/
 ```
 
+Here's a [quick video](https://youtu.be/d5V3_HLXCW4) of how it looks.
+
 Caveats:
 
 * Currently, the test rails app I'm using is the ManageIQ repo which is enormous,
