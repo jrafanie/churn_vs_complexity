@@ -21,6 +21,9 @@ To see the charts, run:
 
 ```
 bundle exec rackup
+
+# Then open a browser:
+open http://localhost:9292/
 ```
 
 Currently, the test rails app I'm using is the ManageIQ repo which is enormous,
