@@ -2,8 +2,8 @@
 
 Generate [churn](https://github.com/danmayer/churn) vs. [complexity](https://github.com/seattlerb/flog) data and present them using [plotly](https://github.com/plotly/plotly.js).
 
-This will certainly not work as you want.  It won't work on Windows possibly other
-platforms so watch out, but was interesting to try.
+This will certainly not work as you want.  It won't work on Windows and possibly other
+platforms, sorry.  It was interesting to try.
 
 YOLO.
 
