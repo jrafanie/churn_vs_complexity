@@ -1,8 +1,9 @@
-# churn_vs_complexity
-Generate churn vs. complexity data and present them using plotly
+# churn vs complexity
 
-This will certainly not work as you want.  It's disgusting and I might throw it
-away but it was interesting to try.
+Generate [churn](https://github.com/danmayer/churn) vs. [complexity](https://github.com/seattlerb/flog) data and present them using [plotly](https://github.com/plotly/plotly.js).
+
+This will certainly not work as you want.  It won't work on Windows possibly other
+platforms so watch out, but was interesting to try.
 
 YOLO.
 
@@ -13,7 +14,7 @@ bundle
 
 Skip the next step if you want to use the CSVs already in this repo.
 
-To generate the CSVs, run the bin with ruby:
+To regenerate the CSVs with newer code or a different git repo, run the bin with ruby:
 
 ```
 bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
