@@ -6,8 +6,8 @@ git_repo = ARGV[0]
 
 def ignored?(file_path)
   return true unless file_path.end_with?('.rb')
-  return true if file_path.start_with?('spec')
-  return true if file_path.start_with?('test')
+  return true if file_path.include?('spec/')
+  return true if file_path.include?('test/')
   return true if file_path.start_with?('db/migrate')
 
   # Exclude everything in config except for common rails files/directories
