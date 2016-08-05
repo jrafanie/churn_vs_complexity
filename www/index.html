@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <script src="https://cdn.plot.ly/plotly-latest.min.js"></script></head>
+<body>
+<div id="churn-complexity" style="width:1000px;height:800px;"></div>
+<script>
+
+Plotly.d3.csv('churn_vs_complexity_backend.csv', function(rows){
+    var trace = {
+      type: 'scatter',                    // set the chart type
+      mode: 'markers',                      // connect points with lines
+      x: rows.map(function(row){          // set the x-data
+        return row['times_changed'];
+      }),
+
+      y: rows.map(function(row){          // set the y-data
+        return row['flog_total'];
+      }),
+
+      line: {                             // set the width of the line.
+        width: 1
+      },
+      text: rows.map(function(row){
+        return row['file_path'];
+      })
+    };
+
+    var layout = {
+      hovermode: 'closest',
+      yaxis: {title: "Complexity"},       // set the y axis title
+      xaxis: {
+        title: "Churn",
+        showgrid: false,                  // remove the x-axis grid lines
+      },
+      margin: {                           // update the left, bottom, right, top margin
+        l: 80, b: 80, r: 10, t: 20
+      }
+    };
+
+    Plotly.plot(document.getElementById('churn-complexity'), [trace], layout, {showLink: false});
+});
+</script>
+</body>
+</html>
