@@ -17,6 +17,7 @@ Skip the next step if you want to use the CSVs already in this repo.
 To regenerate the CSVs with newer code or a different git repo, run the bin with ruby:
 
 ```
+# Takes about 1-2 minutes against a very large Rails app
 bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
 ```
 
