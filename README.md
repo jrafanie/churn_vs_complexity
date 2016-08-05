@@ -26,6 +26,18 @@ bundle exec rackup
 open http://localhost:9292/
 ```
 
-Currently, the test rails app I'm using is the ManageIQ repo which is enormous,
-so it splits the front-end (presenters/controllers/helpers) files from the
-backend to avoid having enormous charts you can't easily read.
+Caveats:
+
+* Currently, the test rails app I'm using is the ManageIQ repo which is enormous,
+so the code splits the front-end (presenters/controllers/helpers) files from the
+backend to avoid having charts you can't easily read.
+
+* We look for churn for about 1 year so any files that haven't been changed in the
+past year won't be in the chart.  This is because we want to refactor code we're
+actually changing.  Complicate code that changes is more important to find. This
+1 year period is random, varying this value might be helpful for a different repo.
+
+* We measure complexity using flog for files as they exist **currently** on your git
+repo.  Old renamed or deleted files will not show up at all.  We don't track
+renames so if you have 10 churn on file "a.rb" and rename it to "b.rb", "a.rb"
+won't show up in the charts and "b.rb" will have a reset churn value less than 10.
