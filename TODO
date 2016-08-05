@@ -1,4 +1,3 @@
-* Add gemspec (churn, flog, parallel) for bin script
 * Add shebang stuff for bin script
 * Alter paths in bin script so you can run the bin script and generate the csv
   wherever you want
