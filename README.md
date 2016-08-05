@@ -5,5 +5,18 @@ This will certainly not work as you want.  It's disgusting and I might throw it 
 
 YOLO.
 
-To generate the csvs, run the bin with ruby.
-To see the charts, run rackup.
+```
+bundle
+```
+
+To generate the csvs, run the bin with ruby:
+
+```
+bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
+```
+
+To see the charts, run:
+
+```
+bundlex exec rackup
+```
