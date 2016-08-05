@@ -15,30 +15,27 @@
 function plot(div, csv, x_field, y_field, hover_label) {
   Plotly.d3.csv(csv, function(rows){
       var trace = {
-        type: 'scatter',                    // set the chart type
-        mode: 'markers',                      // connect points with lines
-        x: rows.map(function(row){          // set the x-data
+        type: 'scatter',                    // we'll do a scatter plot
+        mode: 'markers',                    // points
+        x: rows.map(function(row){          // x data
           return row[x_field];
         }),
 
-        y: rows.map(function(row){          // set the y-data
+        y: rows.map(function(row){          // y data
           return row[y_field];
         }),
 
-        line: {                             // set the width of the line.
-          width: 1
-        },
-        text: rows.map(function(row){
+        text: rows.map(function(row){       // hover text
           return row[hover_label];
         })
       };
 
       var layout = {
         title: csv,
-        hovermode: 'closest',
-        yaxis: {title: y_field},       // set the y axis title
+        hovermode: 'closest',               // hover over text shows closest point
         xaxis: {title: x_field},
-        margin: {                           // update the left, bottom, right, top margin
+        yaxis: {title: y_field},
+        margin: {
           l: 100, b: 100, r: 50, t: 50
         }
       };
