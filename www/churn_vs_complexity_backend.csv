@@ -135,7 +135,6 @@ app/services/middleware_topology_service.rb,3,47.0,6.7
 config/application.rb,4,145.0,29.0
 config/environments/production.rb,3,43.3,43.3
 config/routes.rb,31,464.2,154.7
-config/yaml_strings.rb,3,1960.2,1960.2
 db/fixtures/ae_datastore/ManageIQ/ConfigurationManagement/AnsibleTower/Operations/StateMachines/Job.class/__methods__/launch_ansible_job.rb,7,117.2,7.8
 db/fixtures/ae_datastore/ManageIQ/Service/Provisioning/StateMachines/Methods.class/__methods__/catalogiteminitialization.rb,3,253.3,9.7
 db/fixtures/ae_datastore/ManageIQ/System/CommonMethods/QuotaMethods.class/__methods__/requested.rb,3,269.0,7.9

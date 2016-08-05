@@ -9,6 +9,16 @@ def ignored?(file_path)
   return true if file_path.start_with?("spec")
   return true if file_path.start_with?("test")
   return true if file_path.start_with?("db/migrate")
+
+  # Exclude everything in config except for common rails files/directories
+  if file_path.start_with?("config")
+    return false if file_path == "config/routes.rb"
+    return false if file_path == "config/application.rb"
+    return false if file_path.start_with?("config/initializers")
+    return false if file_path.start_with?("config/environments")
+    return true
+  end
+
   return true if file_path.end_with?("_spec.rb")
   return true if file_path.end_with?("_test.rb")
   return true unless File.file?(file_path)
