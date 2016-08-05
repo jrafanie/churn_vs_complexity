@@ -6,6 +6,7 @@ This will certainly not work as you want.  It's disgusting and I might throw it 
 YOLO.
 
 ```
+gem install bundler
 bundle
 ```
 
@@ -18,5 +19,5 @@ bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
 To see the charts, run:
 
 ```
-bundlex exec rackup
+bundle exec rackup
 ```
