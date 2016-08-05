@@ -1,0 +1,7 @@
+* Add gemspec (churn, flog, parallel) for bin script
+* Add shebang stuff for bin script
+* Alter paths in bin script so you can run the bin script and generate the csv
+  wherever you want
+* Currently, you need to run the bin script and move the csv files to the www
+  directory.  That's silly, the bin script should put it in the right place.
+* The csv file names are hardcoded in the html, this should be changed.
