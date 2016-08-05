@@ -11,7 +11,9 @@ gem install bundler
 bundle
 ```
 
-To generate the csvs, run the bin with ruby:
+Skip the next step if you want to use the CSVs already in this repo.
+
+To generate the CSVs, run the bin with ruby:
 
 ```
 bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
