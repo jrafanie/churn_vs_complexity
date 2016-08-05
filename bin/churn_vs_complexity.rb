@@ -34,6 +34,7 @@ Dir.chdir(git_repo) do
 
   # remove ignored files
   results.compact!
+  results.sort! { |x, y| x.first <=> y.first }
 end
 
 ui_csv      = CSV.open("./www/churn_vs_complexity_controllers_helpers.csv", "wb")
