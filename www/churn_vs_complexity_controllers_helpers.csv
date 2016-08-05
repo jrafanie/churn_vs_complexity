@@ -1,4 +1,4 @@
-file_path,times_changed,flog_total,flog_method_avg
+file,churn,total_complexity,average_method_complexity
 app/controllers/application_controller/timelines.rb,38,579.9,48.3
 app/controllers/provider_foreman_controller.rb,37,1320.5,12.1
 app/controllers/vm_common.rb,32,3102.3,43.1

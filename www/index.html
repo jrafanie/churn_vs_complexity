@@ -47,12 +47,12 @@ function plot(div, csv, x_field, y_field, hover_label) {
   });
 }
 
-plot('churn-complexity1', 'churn_vs_complexity_backend.csv', 'times_changed', 'flog_total', 'file_path')
-plot('churn-complexity2', 'churn_vs_complexity_backend.csv', 'times_changed', 'flog_method_avg', 'file_path')
-plot('churn-complexity3', 'churn_vs_complexity_backend.csv', 'flog_method_avg', 'flog_total', 'file_path')
-plot('churn-complexity4', 'churn_vs_complexity_controllers_helpers.csv', 'times_changed', 'flog_total', 'file_path')
-plot('churn-complexity5', 'churn_vs_complexity_controllers_helpers.csv', 'times_changed', 'flog_method_avg', 'file_path')
-plot('churn-complexity6', 'churn_vs_complexity_controllers_helpers.csv', 'flog_method_avg', 'flog_total', 'file_path')
+plot('churn-complexity1', 'churn_vs_complexity_backend.csv', 'churn', 'total_complexity', 'file')
+plot('churn-complexity2', 'churn_vs_complexity_backend.csv', 'churn', 'average_method_complexity', 'file')
+plot('churn-complexity3', 'churn_vs_complexity_backend.csv', 'average_method_complexity', 'total_complexity', 'file')
+plot('churn-complexity4', 'churn_vs_complexity_controllers_helpers.csv', 'churn', 'total_complexity', 'file')
+plot('churn-complexity5', 'churn_vs_complexity_controllers_helpers.csv', 'churn', 'average_method_complexity', 'file')
+plot('churn-complexity6', 'churn_vs_complexity_controllers_helpers.csv', 'average_method_complexity', 'total_complexity', 'file')
 
 </script>
 </body>

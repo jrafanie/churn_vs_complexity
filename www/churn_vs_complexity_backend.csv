@@ -1,4 +1,4 @@
-file_path,times_changed,flog_total,flog_method_avg
+file,churn,total_complexity,average_method_complexity
 app/models/miq_expression.rb,54,2236.5,34.9
 config/routes.rb,31,464.2,154.7
 app/models/miq_provision_virt_workflow.rb,17,1332.1,19.0

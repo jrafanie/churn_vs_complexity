@@ -35,8 +35,8 @@ results.compact!
 
 ui_csv      = CSV.open("churn_vs_complexity_controllers_helpers.csv", "wb")
 backend_csv = CSV.open("churn_vs_complexity_backend.csv", "wb")
-ui_csv << ["file_path", "times_changed", "flog_total", "flog_method_avg"]
-backend_csv << ["file_path", "times_changed", "flog_total", "flog_method_avg"]
+ui_csv << ["file", "churn", "total_complexity", "average_method_complexity"]
+backend_csv << ["file", "churn", "total_complexity", "average_method_complexity"]
 
 results.each do |r|
   if /app\/helpers|app\/controllers|app\/presenters/.match(r[0])
