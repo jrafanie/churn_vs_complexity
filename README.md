@@ -18,7 +18,7 @@ To regenerate the CSVs with newer code or a different git repo, run the bin with
 
 ```
 # Takes about 1-2 minutes against a very large Rails app
-bundle exec ruby bin/churn_vs_complexity.rb ~/path/to/my/git/repo
+bin/churn_vs_complexity ~/path/to/my/git/repo
 ```
 
 To see the charts, run:
