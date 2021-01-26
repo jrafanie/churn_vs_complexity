@@ -42,10 +42,12 @@ Dir.chdir(git_repo) do
     puts "file_path: #{change[:file_path]}"
 
     output = `flog -sq #{change[:file_path]}`
-    flog_total = /([0-9]+\.[0-9]+): flog total/.match(output)[1]
-    flog_method_avg = /([0-9]+\.[0-9]+): flog\/method average/.match(output)[1]
-    puts "file_path: #{change[:file_path]}, changes: #{change[:times_changed]}, flog total: #{flog_total}, flog method avg: #{flog_method_avg}"
-    [change[:file_path], change[:times_changed], flog_total, flog_method_avg]
+    unless output.empty?
+      flog_total = /([0-9]+\.[0-9]+): flog total/.match(output)[1]
+      flog_method_avg = /([0-9]+\.[0-9]+): flog\/method average/.match(output)[1]
+      puts "file_path: #{change[:file_path]}, changes: #{change[:times_changed]}, flog total: #{flog_total}, flog method avg: #{flog_method_avg}"
+      [change[:file_path], change[:times_changed], flog_total, flog_method_avg]
+    end
   end
 
   # remove ignored files
